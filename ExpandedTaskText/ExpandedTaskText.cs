@@ -232,7 +232,7 @@ public class ExpandedTaskText(
         {
             foreach (var (id, level) in trader?.Assort?.LoyalLevelItems ?? [])
             {
-                result.Add(id, level);
+                result.TryAdd(id, level);
             }
         }
         
